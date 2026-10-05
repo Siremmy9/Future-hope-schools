@@ -2,8 +2,7 @@
    main.js  -  shared chrome (header/footer/WhatsApp), section renderers,
    scroll effects, counters, testimonial carousel.
    Other scripts register renderers: App.renderers["name"] = (el) => {...}
-   and run code after setup with App.onReady(fn).
-   ========================================================================== */
+   and run code after setup with App.onRe ========================================================================== */
 
 const App = {
   renderers: {},
@@ -75,6 +74,8 @@ const App = {
     const menu = $("#mobile-menu"),
       openBtn = $(".menu-btn", h),
       closeBtn = $(".menu-close", h);
+          document.body.appendChild(menu)
+
     const setOpen = (open) => {
       menu.classList.toggle("is-open", open);
       openBtn.setAttribute("aria-expanded", String(open));
@@ -144,7 +145,7 @@ const App = {
       </div>
       <div class="footer-bottom"><div class="container footer-bottom__in">
         <p>&copy; 2026 ${esc(cfg.name)}. All Rights Reserved.</p>
-        <p>Website designed by <span>${esc(cfg.designer)}</span></p>
+        <p> <span>${esc(cfg.designer)}</span></p>
         <p><a href="admin/login.html">Admin login</a></p></div></div>
       <a class="wa-float" data-wa target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">${icon("whatsapp", 28)}<span>Chat with us</span></a>`;
     $$(".social.is-placeholder", f).forEach((a) =>

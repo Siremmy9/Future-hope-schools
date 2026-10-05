@@ -48,10 +48,10 @@ const schoolConfig = {
   /* ---- Social links (leave empty to show a "not set" placeholder) ---- */
   social: { facebook: "", instagram: "", youtube: "", tiktok: "" },
 
-  /* ---- Brand colours  ---- */
+  /* ---- Brand colours   ---- */
   colors: { primary: "#6D1230", secondary: "#D4A017" },
 
-  designer: "[Emmanuel | Softech Digitals]",
+  designer: "Emmanuel | Softech Digitals",
 
   stats: { years: 10, students: 500, staff: 12, programs: 12 },
 

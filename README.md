@@ -1,11 +1,10 @@
-# Danirariz Schools: Website Template
+# Future Hope Schools: Website Template
 
 A premium, responsive school website built with plain HTML5, CSS3 and vanilla JavaScript (no frameworks, no backend).
 
 **Where things are edited**
 
-| What                                                                                                                                     | Where                                                     |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| What                                                                                                                                     | Where
 | School name, tagline, phone, email, WhatsApp, address, map, social links, colours, sections (levels), about text, statistics, hero video | `js/config.js`                                            |
 | Staff, gallery, news, facilities, academics, testimonials, school fees and bank details                                                  | `js/content.js`                                           |
 | Photos                                                                                                                                   | `assets/images/...` (referenced from the two files above) |
@@ -30,15 +29,6 @@ Open `index.html` in a browser, or serve the folder (VS Code Live Server, `pytho
 
 ## Add pictures and content
 
-1. Copy the photo into the right folder, e.g. `assets/images/staff/mrs-okafor.jpg`.
-2. Open `js/content.js` and add or edit one entry:
-   - Staff: `{ name: "Mrs. A. Okafor", position: "Principal", department: "Administration", photo: "assets/images/staff/mrs-okafor.jpg", bio: "..." }`
-   - Gallery: `{ image: "assets/images/gallery/sports-day.jpg", caption: "Sports day", category: "Sports" }`
-   - News: `{ title, category, date: "2026-10-05", image, published: true, excerpt, content }` (set `published: false` to hide)
-3. Save and refresh. Delete an entry's line to remove it. Leave `image: ""` for a placeholder.
-
-School section photos (Crèche, Nursery, Primary, Secondary, About) are set in `js/config.js` under `images`. Their text (age, description, bullet points, classes) is under `levels`.
-
 ## Logo, video, WhatsApp, map
 
 - **Logo:** replace `assets/logo/logo.svg` (or change `logo` in `config.js`). Replace `assets/icons/favicon.svg` too.
@@ -49,10 +39,6 @@ School section photos (Crèche, Nursery, Primary, Secondary, About) are set in `
 ## Fees
 
 Edit amounts and bank details in `js/content.js` under `fees` (`"₦XX,XXX"` or `"Contact School"`).
-
-## Admin dashboard
-
-Login: `admin/login.html`, demo account **admin / admin123**. It manages Admissions (status updates), Students, Messages (read/unread/replied) and the Activity log.
 
 **Important:** the login is DEMO ONLY and not secure (see the comment at the top of `js/admin.js`). Admissions and messages are saved in the browser where they were submitted, so a parent's enquiry will not appear in your admin on another device until a backend (e.g. Supabase or PHP + MySQL) is connected. Until then, the WhatsApp buttons are the reliable way for parents to reach you.
 

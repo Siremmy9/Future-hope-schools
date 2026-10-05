@@ -21,7 +21,7 @@ const schoolContent = {
       name: "Mr Isidahomen Matthew",
       position: "Principal",
       department: "Administration",
-      photo: "",
+      photo: "assets/images/principal.jpg",
       bio: "Propiertor. Motivated Educator, Leading with zeal and dedication",
     },
     {
